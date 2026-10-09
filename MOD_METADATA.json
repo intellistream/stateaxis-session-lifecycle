@@ -1,0 +1,44 @@
+{
+  "schema_version": "vllm-hust-mod-metadata-v1",
+  "mod_id": "org.vllm-hust.stateaxis-session-lifecycle",
+  "repository": "stateaxis-session-lifecycle",
+  "display_name": "stateaxis-session-lifecycle",
+  "canonical_repository": "https://github.com/intellistream/stateaxis-session-lifecycle",
+  "responsibility": {
+    "organization": "intellistream",
+    "maintainers": [
+      {
+        "name": "Shuhao Zhang (Tony)",
+        "github": "ShuhaoZhangTony"
+      }
+    ],
+    "advisor_status": "not_declared",
+    "advisors": []
+  },
+  "lifecycle": {
+    "status": "experimental",
+    "default_enabled": false,
+    "activation_contract": "Import-only research descriptor; activation is refused until the StateAxis host contract and independent implementation are reviewed.",
+    "rollback_contract": "Disable or forget the descriptor and run the unchanged StateAxis host without this MOD."
+  },
+  "scope": {
+    "mechanism": "session_aware_state_lifecycle",
+    "supported_workloads": [],
+    "out_of_scope": [
+      "general performance claims",
+      "automatic inheritance from StateAxis aggregate evidence"
+    ]
+  },
+  "evidence": {
+    "qualification": "unqualified",
+    "latest_result": "evidence/ISSUE11_SESSION_PRESSURE_CLOSURE_20260815.md",
+    "index": "EVIDENCE.md",
+    "performance_claims": [
+      {
+        "label": "inconclusive-tested-cell",
+        "scope": "frozen StateAxis source evidence only",
+        "result": "Reuse mechanisms were positive while end-to-end outcomes were mixed; no general performance claim is made."
+      }
+    ]
+  }
+}

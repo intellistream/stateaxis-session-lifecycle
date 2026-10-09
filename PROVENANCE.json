@@ -1,0 +1,13 @@
+{
+  "schema_version": "stateaxis-mod-provenance/v1",
+  "source_repository": "Qixin-Gaoke/stateaxis",
+  "source_commit": "7562b5fa6f42e2e045a877b53ac934739e2cf230",
+  "source_issues": [
+    11
+  ],
+  "source_evidence": "docs/history/reports/ISSUE11_SESSION_PRESSURE_CLOSURE_20260815.md",
+  "copied_evidence": "evidence/ISSUE11_SESSION_PRESSURE_CLOSURE_20260815.md",
+  "copied_evidence_sha256": "974ea2a0a9dce7caf7b6f1ab211b2b74ddcef9ffff7f1d229e0a203be89a946a",
+  "qualification_inherited": false,
+  "implementation_extracted": false
+}
