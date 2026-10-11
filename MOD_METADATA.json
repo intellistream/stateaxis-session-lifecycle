@@ -18,26 +18,28 @@
   "lifecycle": {
     "status": "experimental",
     "default_enabled": false,
-    "activation_contract": "Import-only research descriptor; activation is refused until the StateAxis host contract and independent implementation are reviewed.",
-    "rollback_contract": "Disable or forget the descriptor and run the unchanged StateAxis host without this MOD."
+    "activation_contract": "Manifest 0.3 active, default-off, ECPA-only activation of the hash-bound bounded session lifecycle and session-aware pressure policy.",
+    "rollback_contract": "Omit this MOD from the Extension Manager plan; StateAxis retains disabled session lifecycle authority and pressure policy."
   },
   "scope": {
     "mechanism": "session_aware_state_lifecycle",
-    "supported_workloads": [],
+    "supported_workloads": [
+      "generation-safe session reuse and explicit close under bounded state-slot pressure"
+    ],
     "out_of_scope": [
       "general performance claims",
       "automatic inheritance from StateAxis aggregate evidence"
     ]
   },
   "evidence": {
-    "qualification": "unqualified",
+    "qualification": "historical-mixed-version-unqualified",
     "latest_result": "evidence/ISSUE11_SESSION_PRESSURE_CLOSURE_20260815.md",
     "index": "EVIDENCE.md",
     "performance_claims": [
       {
-        "label": "inconclusive-tested-cell",
+        "label": "historical-matched-real-npu-mixed-serving-component-positive",
         "scope": "frozen StateAxis source evidence only",
-        "result": "Reuse mechanisms were positive while end-to-end outcomes were mixed; no general performance claim is made."
+        "result": "Recomputed prompt tokens fell from 12 to 0 and logical throughput rose 0.506% in the frozen cell, while TTFT tails were mixed; version 0.2.0 requires fresh ECPA qualification."
       }
     ]
   }

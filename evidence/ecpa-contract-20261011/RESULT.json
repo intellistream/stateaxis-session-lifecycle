@@ -1,0 +1,70 @@
+{
+  "schema_version": "stateaxis-mod-on-off/v1",
+  "date_utc": "2026-10-11",
+  "mod_id": "org.vllm-hust.stateaxis-session-lifecycle",
+  "mod_version": "0.2.0",
+  "research_manifest_sha256": "3fff52b9b5668de8269199419283844b52ca7594d6bef0ab9d579aa9fabb76c9",
+  "evidence_label": "manager-contract-session-lifecycle-non-performance",
+  "performance_qualified": false,
+  "hardware_execution": false,
+  "manager": {
+    "check": "passed",
+    "plan": "passed",
+    "dry_run": "passed",
+    "managed_assembly_check_process": "passed",
+    "off_assembly_identity_sha256": "3242c699294b3b830fa56bea4d25d80cfe55fb7712d4bced3591170a465b0bde",
+    "on_assembly_identity_sha256": "844c75e411445a6ef1f339ddb4f2d5f5bc40b8a42cae9579b8cbd524bd406e4c",
+    "direct_flag_activation_rejected": true
+  },
+  "validation": {
+    "python_tests": "3 passed",
+    "rust_session_parser_tests": "1 passed",
+    "rust_session_pressure_tests": "1 passed",
+    "rust_session_close_tests": "5 passed",
+    "rust_library_tests": "413 passed",
+    "cargo_check_lib_bins": "passed",
+    "native_state_engine_build": "passed"
+  },
+  "on_effects": {
+    "session_lifecycle_mod_identity_present": true,
+    "session_pressure_eviction_requests": 1,
+    "session_pressure_eviction_applied": 1,
+    "session_pressure_eviction_fallbacks": 0,
+    "session_pressure_unprotected_evictions": 1,
+    "session_pressure_protected_evictions": 0,
+    "protected_state_exact_replay": true,
+    "unprotected_state_reclaimed": true
+  },
+  "off_effects": {
+    "session_lifecycle_mod_identity_present": false,
+    "session_tables_allocated": false,
+    "session_requests_fail_closed": true,
+    "session_authority_requests": 0,
+    "session_authority_applied": 0,
+    "session_authority_fallbacks": 0
+  },
+  "historical_real_npu_result": {
+    "model": "Qwen2.5-14B BF16",
+    "state_capacity": 17,
+    "fresh_process_repetitions_per_arm": 3,
+    "control_recomputed_prompt_tokens": 12,
+    "candidate_recomputed_prompt_tokens": 0,
+    "recomputed_prompt_token_delta_percent": -100.0,
+    "control_logical_request_per_second_p50": 8.8560,
+    "candidate_logical_request_per_second_p50": 8.9009,
+    "logical_request_per_second_delta_percent": 0.506,
+    "control_tpot_p99_ms": 43.688,
+    "candidate_tpot_p99_ms": 41.273,
+    "control_ttft_p99_ms": 63.965,
+    "candidate_ttft_p99_ms": 65.091,
+    "peak_hbm_delta_mib": 0,
+    "exact_and_lifecycle_correct": true,
+    "claim": "component-positive recomputation reduction with mixed serving outcome in the frozen workload only"
+  },
+  "limitations": [
+    "current ECPA activation checks use a deterministic CPU protocol mock worker",
+    "the historical real-NPU campaign predates Manifest 0.3 activation",
+    "fresh matched ECPA real-online repetitions are required",
+    "no general latency, throughput, HBM, or capacity claim is established"
+  ]
+}
