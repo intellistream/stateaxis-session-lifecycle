@@ -1,0 +1,53 @@
+{
+  "schema_version": "stateaxis-research-mod/v1",
+  "mod_id": "org.vllm-hust.stateaxis-session-lifecycle",
+  "version": "0.2.0",
+  "mechanism": {
+    "name": "bounded-generation-safe-session-lifecycle",
+    "enabled": true,
+    "max_session_ids": 64,
+    "max_holder_edges": 256,
+    "pressure_policy": "session_aware",
+    "generation_bound": true,
+    "transactional_holder_edges": true,
+    "idle_close_required": true,
+    "exclusive_state_reclaimed_on_close": true,
+    "shared_state_survives_until_last_holder": true,
+    "soft_protection": true,
+    "leased_states_ineligible": true,
+    "deterministic_candidate_order": true,
+    "fail_closed": true
+  },
+  "host_contract": {
+    "provider": "stateaxis",
+    "api_range": ">=1,<2",
+    "implementation": "statecentric_engine:parse_session_lifecycle_additional_config",
+    "effect_counters": [
+      "session_authority_requests",
+      "session_authority_applied",
+      "session_authority_fallbacks",
+      "session_pressure_eviction_requests",
+      "session_pressure_eviction_applied",
+      "session_pressure_eviction_fallbacks",
+      "session_pressure_protected_evictions",
+      "session_pressure_unprotected_evictions",
+      "session_pressure_evicted_tokens"
+    ]
+  },
+  "qualification": {
+    "performance_qualified": false,
+    "evidence_label": "historical-matched-real-npu-mixed-serving-component-positive",
+    "scope": "Qwen2.5-14B BF16 single-worker state-capacity-17 session-pressure workload",
+    "blockers": [
+      "the historical result predates the independent Manifest 0.3 activation",
+      "recomputed prompt tokens improved while end-to-end latency was mixed",
+      "fresh matched ECPA real-online repetitions are required",
+      "no general latency, throughput, HBM, or capacity claim is established"
+    ]
+  },
+  "source": {
+    "repository": "Qixin-Gaoke/stateaxis",
+    "commit": "7562b5fa6f42e2e045a877b53ac934739e2cf230",
+    "issues": [11]
+  }
+}
