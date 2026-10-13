@@ -1,0 +1,77 @@
+{
+  "analyzer": {
+    "path": "/tmp/statecentric-issue11-r3/benchmarks/correct_issue11_session_pressure_throughput_r3c.py",
+    "sha256": "94f95fa05254ce9492b5c62b2e7be36daef286502ed36e809eca820114a2e230"
+  },
+  "format": "statecentric-issue11-session-pressure-corrected-analysis-identity-r3c",
+  "identity_sha256": "efc23629c45ad7c71f168361e26fc6d9f2fc08ff47f0543e170918f782f1c38c",
+  "inputs": {
+    "candidate_1_raw": {
+      "bytes": 23797,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-candidate-1/raw_requests.jsonl",
+      "sha256": "d05f7d069d6efe4016443076086e9bcae9acb09c5fa9d40c73652906164ae213"
+    },
+    "candidate_1_result": {
+      "bytes": 93190,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-candidate-1/result.json",
+      "sha256": "01e9ce8f423cd9b6c15f1e193771d227ca056a9bff072c99fa26812f3e09aa13"
+    },
+    "candidate_2_raw": {
+      "bytes": 23797,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-candidate-2/raw_requests.jsonl",
+      "sha256": "a83317659fc5327c6e318054505f6e19ff578727dd9b09fb37435e0841575750"
+    },
+    "candidate_2_result": {
+      "bytes": 93189,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-candidate-2/result.json",
+      "sha256": "f1539f9574a3886af5f2cde8373b18175605d734c43554e4508f304a8efab204"
+    },
+    "candidate_3_raw": {
+      "bytes": 23797,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-candidate-3/raw_requests.jsonl",
+      "sha256": "6093b128eb2e353886643d21a5b43428d06a417084a375c318dc9a0aeb573a73"
+    },
+    "candidate_3_result": {
+      "bytes": 93189,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-candidate-3/result.json",
+      "sha256": "16623b3ffeea350c1eb8171e9829417f90e5f72d97ce7626c0a051a67d1704a5"
+    },
+    "control_1_raw": {
+      "bytes": 24123,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-control-1/raw_requests.jsonl",
+      "sha256": "56c46f49ad4f457faac9e79d11335f278e4d6fb56e21098340afa0a780a28d13"
+    },
+    "control_1_result": {
+      "bytes": 95483,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-control-1/result.json",
+      "sha256": "582565b4ee716a50523e217696e86c092eb8e9f54f123aa758db5e4616c259b0"
+    },
+    "control_2_raw": {
+      "bytes": 24121,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-control-2/raw_requests.jsonl",
+      "sha256": "e1358548606659397fb32c86bc16cb5c7f7248dba4543381452eb001868031c2"
+    },
+    "control_2_result": {
+      "bytes": 95494,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-control-2/result.json",
+      "sha256": "72722c18f2303c9dfa4b5d7696258c41f1efacb6abb61f0921e66198fe958fc1"
+    },
+    "control_3_raw": {
+      "bytes": 24125,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-control-3/raw_requests.jsonl",
+      "sha256": "bf6dbe3908d74ffa8f39f5ad18d3ee0b817cc4d2c671cbe17839a65ef77ce72d"
+    },
+    "control_3_result": {
+      "bytes": 95456,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/runs/formal-control-3/result.json",
+      "sha256": "33ad347f10200143434f543791c8e53b6a779a26e7826d359421f400222ac3f7"
+    },
+    "original_summary": {
+      "bytes": 373419,
+      "path": "/tmp/statecentric-issue11-r3/results/issue11-session-pressure-20260815-r3/result.json",
+      "sha256": "65eab006a7c10e1333e254bb802a8a1606ebd11a64d45be276dc12b2d9b3b862"
+    }
+  },
+  "schema_version": 1,
+  "source_commit": "7d62953573dd42f05d6a0c1e866909f5e6b73e0e"
+}

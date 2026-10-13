@@ -32,14 +32,14 @@
     ]
   },
   "evidence": {
-    "qualification": "historical-mixed-version-unqualified",
-    "latest_result": "evidence/ISSUE11_SESSION_PRESSURE_CLOSURE_20260815.md",
+    "qualification": "historical_matched_real_npu_recomputation_positive_serving_mixed_active_revision_performance_unqualified",
+    "latest_result": "evidence/issue11-session-pressure-20260815-r3/result_corrected_r3c.json",
     "index": "EVIDENCE.md",
     "performance_claims": [
       {
-        "label": "historical-matched-real-npu-mixed-serving-component-positive",
-        "scope": "frozen StateAxis source evidence only",
-        "result": "Recomputed prompt tokens fell from 12 to 0 and logical throughput rose 0.506% in the frozen cell, while TTFT tails were mixed; version 0.2.0 requires fresh ECPA qualification."
+        "label": "historical-matched-real-npu-recomputation-positive-serving-mixed",
+        "scope": "frozen StateAxis issue #11 R3/R3c; Qwen2.5-14B BF16; Ascend 910B2; capacity-17 pressure; three fresh processes per arm",
+        "result": "All six formal runs were exact and lifecycle-correct. Recomputed prompt tokens fell from 12 to 0, protected-root hits rose from 0 to 3, logical throughput improved 0.506%, and TPOT P99 improved 5.53%, while TTFT P99 regressed 1.76%. The registered component predicate passed, but serving performance remained mixed and active version 0.2.0 is unqualified."
       }
     ]
   }

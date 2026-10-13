@@ -14,13 +14,18 @@ Manager/ECPA with the exact research-manifest digest.
 
 Status: **historical mixed, active experimental, not performance-qualified**.
 
-In the preserved Qwen2.5-14B capacity-pressure cell, recomputed prompt tokens fell
-from 12 to 0 and logical throughput improved by 0.506%, while TTFT tails were mixed.
-That result predates this active revision and is not a general performance claim.
+In the preserved Qwen2.5-14B capacity-pressure 3+3 cell, recomputed prompt tokens
+fell from 12 to 0 and protected-root hits rose from 0 to 3. Logical throughput
+improved by 0.506% and TPOT P99 improved 5.53%, while TTFT P99 regressed 1.76%.
+The preregistered recomputation/no-TPOT-regression acceptance predicate passed,
+but serving latency remained mixed. That result predates this active revision and
+is not a general performance claim.
 
-The copied evidence and its SHA-256 are recorded in `PROVENANCE.json`. Negative,
-failed, and inconclusive results are retained. Microbenchmarks and component results
-must not be restated as online end-to-end gains.
+The compact machine-readable bundle is under
+`evidence/issue11-session-pressure-20260815-r3/`, including the authoritative R3c
+correction and the rejected unmatched-denominator result. Negative, failed, and
+inconclusive results are retained. Microbenchmarks and component results must not be
+restated as online end-to-end gains.
 
 ## Install and inspect
 

@@ -1,0 +1,11 @@
+{
+  "all_protected_repetitions_per_arm": 1,
+  "completed": true,
+  "exit_code": 0,
+  "format": "statecentric-issue11-session-pressure-status-r3",
+  "performance_claim": false,
+  "physical_npu": 5,
+  "reuse_repetitions_per_arm": 3,
+  "schema_version": 1,
+  "speedup_claim": false
+}
