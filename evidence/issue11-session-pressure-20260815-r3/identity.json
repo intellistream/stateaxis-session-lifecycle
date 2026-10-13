@@ -1,0 +1,147 @@
+{
+  "format": "statecentric-issue11-session-pressure-identity-r3",
+  "identity_sha256": "e8dd29d35de9d0f171d450505b2a9686d038c60c15393677eecb7285d8d6b07d",
+  "image": {
+    "digest": "sha256:f4c89c293e076453e9eef9edb5fb9669740dccbd3c48619a9f976d775fc29b81",
+    "reference": "quay.io/ascend/vllm-ascend:v0.23.0rc1-openeuler"
+  },
+  "records": {
+    "agent_oracle_reference_1": {
+      "bytes": 1623,
+      "path": "/tmp/statecentric-issue11-r3/results/issue3-agent-oracle-20260814-r3/reference-1.json",
+      "sha256": "d5fe5f5021d603a0be1b6a347cdc42193ca0fad19cda090901511a3f780f6dd0"
+    },
+    "agent_oracle_reference_2": {
+      "bytes": 1623,
+      "path": "/tmp/statecentric-issue11-r3/results/issue3-agent-oracle-20260814-r3/reference-2.json",
+      "sha256": "d5fe5f5021d603a0be1b6a347cdc42193ca0fad19cda090901511a3f780f6dd0"
+    },
+    "agent_oracle_result": {
+      "bytes": 572,
+      "path": "/tmp/statecentric-issue11-r3/results/issue3-agent-oracle-20260814-r3/result.json",
+      "sha256": "b0ec7d15b50b4faa295a4be065184a799f19757df1fadf77ad5c78aad10109dc"
+    },
+    "client": {
+      "bytes": 9461,
+      "path": "/tmp/statecentric-issue11-r3/benchmarks/issue11_session_pressure_probe.py",
+      "sha256": "608e50ae79dd1a9cfe5cabc91393cfa628e957eb40e896cc169b1e9f40e820ee"
+    },
+    "client_helpers": {
+      "bytes": 13493,
+      "path": "/tmp/statecentric-issue11-r3/benchmarks/issue3_agent_feedback_probe.py",
+      "sha256": "50a1253860cabcf5cc001275b1e5e53405e3a00be053edf2dab674d4a2bca0a6"
+    },
+    "cpp_closure": {
+      "bytes": 30503,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-artifact-20260815-r3/native_cpp_producer_closure.json",
+      "sha256": "b30250d2e39604a9d5a588ed921d302a95c81c6bd2f0e8ae4a7f43b59bbe9b24"
+    },
+    "decode_oracle_manifest": {
+      "bytes": 13869,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/decode_oracle/manifest.json",
+      "sha256": "a1d1999c7c07ced46293b682c4bb0848869199f519bc71c13e5fc97e87b6ebc0"
+    },
+    "execution_artifact": {
+      "bytes": 360,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-artifact-20260815-r3/execution_artifact_identity.bin",
+      "sha256": "eda976712755e07825549bd9c3346536878425c4235b422c60b27043ab45da51"
+    },
+    "execution_config": {
+      "bytes": 256,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-artifact-20260815-r3/execution_config.bin",
+      "sha256": "408ad3b68c38df1cde4f335264c5554a89d476f3e9c179c71063ffd1ca0caea2"
+    },
+    "full_oracle_manifest": {
+      "bytes": 13855,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/full_oracle_4/manifest.json",
+      "sha256": "38aae938012da96bab02e0e73787bab06ee1c166c8813364f43d0a80b6b0a1ca"
+    },
+    "global_manifest": {
+      "bytes": 1632,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r6/global_pack/global_manifest.json",
+      "sha256": "5922b55ba03d371388d7fc68b4a4e55a152c1ce33917d057f534a83beaee1a4f"
+    },
+    "identity_freezer": {
+      "bytes": 4457,
+      "path": "/tmp/statecentric-issue11-r3/benchmarks/freeze_issue11_session_pressure_identity_r3.py",
+      "sha256": "634fb4b16d20408e71d2d95bf9e3bae3065daa95f475c90f4386e13775d19c75"
+    },
+    "inspector": {
+      "bytes": 154352,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-cpp-build-r3/statecentric_qwen2_resident_plan_inspect",
+      "sha256": "35e10978a496ef52c8b3858fc7bd621fa71f1a27bea776e115812a40e9057ed0"
+    },
+    "launcher": {
+      "bytes": 196473,
+      "path": "/tmp/statecentric-issue11-r3/scripts/run_native_http_npu_probe.sh",
+      "sha256": "d81a2de0620116a8658c2e5b1d463d8fbb75bda038dabb8b422f9bb73c8ecdfc"
+    },
+    "layers_manifest": {
+      "bytes": 233565,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/worker_layers/all_layers_manifest.json",
+      "sha256": "a1c0e8156dd20fa06fb97b45a3c19a37c330b06d33cdcd9f37277d8f272e0530"
+    },
+    "model_manifest": {
+      "bytes": 168249,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/model_manifest.json",
+      "sha256": "a361693076e1f8e073711796b40269973396ad4b7ed4373a57bf9b6eafdc1912"
+    },
+    "native_state_identity": {
+      "bytes": 3002,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-artifact-20260815-r3/native_state_identity.json",
+      "sha256": "79792ed1e7155a1fe3adb0a82c89a88cdf53bd4a4fa67fd8e6d3a00c962fc1a9"
+    },
+    "npu_runner": {
+      "bytes": 11732,
+      "path": "/tmp/statecentric-issue11-r3/scripts/run_issue11_session_pressure_20260815_r3_gate.sh",
+      "sha256": "faa52ea1c278134b7c00a110ba443355e6eca0e228b13d75c94e22234a16d0fb"
+    },
+    "operator_fixture_manifest": {
+      "bytes": 1185,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/operator_fixture/manifest.json",
+      "sha256": "7a0e025936e73d2b394ec2c3ab49390f2182593662cca76dd6f0b8979e1dbfb3"
+    },
+    "prepare_runner": {
+      "bytes": 5601,
+      "path": "/tmp/statecentric-issue11-r3/scripts/prepare_issue11_session_pressure_20260815_r3.sh",
+      "sha256": "3a063d72dab8d657b62349faa7337e72987895e32da8d5117250a5ab6e19b533"
+    },
+    "preregistration": {
+      "bytes": 3420,
+      "path": "/tmp/statecentric-issue11-r3/benchmarks/issue11_session_pressure_20260815_r3_preregistration.json",
+      "sha256": "aaddc25ca02df0d72ed43dfdd8059801e7afe3933b780248b6797bb7faa4d866"
+    },
+    "readiness": {
+      "bytes": 4287,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-artifact-20260815-r3/readiness.json",
+      "sha256": "6ded79e315f2a008300aba3f38a44824c3bbaf84b18ca7987e3ecd6e69751cec"
+    },
+    "rust_bundle_manifest": {
+      "bytes": 19483,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-rust-bundle-r3/manifest.json",
+      "sha256": "167b9dc7a4dac3f37c3ef576f0ca95c13b182afd239b77ba1bac6ddaf9409fea"
+    },
+    "rust_server": {
+      "bytes": 2833808,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-rust-bundle-r3/native_state_engine",
+      "sha256": "9e6f69ab66a0a2425cf3ed57a15060e639c452a86f66caed862b011f0866e3fa"
+    },
+    "summarizer": {
+      "bytes": 4938,
+      "path": "/tmp/statecentric-issue11-r3/benchmarks/summarize_issue11_session_pressure_r3.py",
+      "sha256": "0beb838ff1f240e8e4ad3f1b1365bfeab74b0e0e1c6231002083349c0c28325e"
+    },
+    "worker": {
+      "bytes": 815512,
+      "path": "/tmp/statecentric-issue11-r3/.benchmarks/issue11-session-pressure-cpp-build-r3/statecentric_resident_full_model_probe",
+      "sha256": "cdda03cf1491f4e7e18296f966b89232bae64abb78bbd578cc5bfffd08524744"
+    },
+    "workload": {
+      "bytes": 1346,
+      "path": "/tmp/statecentric-issue11-r3/benchmarks/issue11_agent_session_20260814_r1_workload.json",
+      "sha256": "acab2ef22a997197a2fae7c94ea85519ed7b971c4a76a9174b5bda734c8a49c9"
+    }
+  },
+  "schema_version": 1,
+  "source_commit": "769eed4f93171034df1e04b34babe42f91033c6b"
+}

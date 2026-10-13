@@ -17,6 +17,10 @@
   - recomputed prompt tokens: 12 OFF versus 0 ON
   - logical request/s p50: 8.8560 OFF versus 8.9009 ON (+0.506%)
   - serving latency was mixed, so no general speedup claim is made
+- `evidence/issue11-session-pressure-20260815-r3/`
+  - machine-readable corrected aggregate, rejected original aggregate, frozen
+    identity, six formal run identities, hardware selection and closure audits
+  - `RESULT.md` explains the accepted component benefit and mixed serving boundary
 - `evidence/on-off-preflight-20261010/`
   - preserved pre-activation result; ON was not runnable at version `0.1.0.dev0`
 

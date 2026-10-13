@@ -1,0 +1,47 @@
+{
+  "arms": {
+    "candidate": {
+      "logical_request_per_s": {
+        "max": 9.0057969969257,
+        "p50": 8.9008590931648,
+        "p95": 8.99530320654961,
+        "p99": 9.003698238850482
+      },
+      "logical_requests_per_run": 19,
+      "per_run": [
+        8.9008590931648,
+        8.861303375795044,
+        9.0057969969257
+      ],
+      "throughput_cv": 0.00683306281623903
+    },
+    "control": {
+      "logical_request_per_s": {
+        "max": 8.986342551387782,
+        "p50": 8.856042001048868,
+        "p95": 8.973312496353891,
+        "p99": 8.983736540381004
+      },
+      "logical_requests_per_run": 19,
+      "per_run": [
+        8.814707882717173,
+        8.986342551387782,
+        8.856042001048868
+      ],
+      "throughput_cv": 0.008231210908711999
+    }
+  },
+  "candidate_median_logical_throughput_delta_fraction": 0.0050606232570515886,
+  "classification": "recomputation-positive; logical throughput point estimate +0.506%; TTFT/TPOT/tail remain mixed; no significance or general speedup claim",
+  "correction": {
+    "matched_denominator": 19,
+    "reason": "the original numerator counted the control-only expected 409 stale attempt, producing unmatched 20-versus-19 denominators",
+    "rejected_field": "result.json arms.*.request_per_s",
+    "timing_boundary": "unchanged wall_interval_ns from the accepted frozen runs"
+  },
+  "format": "statecentric-issue11-session-pressure-corrected-analysis-r3c",
+  "performance_claim": false,
+  "schema_version": 1,
+  "speedup_claim": false,
+  "vllm_comparison_claim": false
+}
